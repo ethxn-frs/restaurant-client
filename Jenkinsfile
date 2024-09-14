@@ -46,8 +46,8 @@ pipeline {
             steps {
                 // Commande pour déployer le front-end sur ton serveur Nginx
                 sh '''
-                sudo rm -rf /var/www/restaurant-frontend/*
-                sudo cp -r build/* /var/www/restaurant-frontend/
+                sudo rm -rf /var/www/restaurant-client/*
+                sudo cp -r build/* /var/www/restaurant-client/
                 '''
             }
         }
