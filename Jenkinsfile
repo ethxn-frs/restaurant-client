@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ethxn-frs/restaurant-client.git', credentialsId: '5de0e5af-c4af-45cf-8a7a-b20a599baf8a'
+                git branch: 'master', url: 'https://github.com/ethxn-frs/restaurant-client.git', credentialsId: '5de0e5af-c4af-45cf-8a7a-b20a599baf8a'
             }
         }
 
