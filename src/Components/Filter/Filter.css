@@ -1,0 +1,45 @@
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.filter .select__control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.filter .select__control--is-focused {
+    border-color: #ff5733;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+}
+
+.filter .select__multi-value {
+    background-color: #ff5733;
+    color: white;
+}
+
+.filter .select__multi-value__label {
+    color: white;
+}
+
+.filter .select__multi-value__remove {
+    color: white;
+    cursor: pointer;
+}
+
+.filter .select__multi-value__remove:hover {
+    background-color: #e04e1e;
+    color: white;
+}
+
+.search-filter input {
+    padding: 14px 40px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border-color: gray;
+}

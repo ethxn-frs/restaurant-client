@@ -1,0 +1,67 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social,
+.footer-payment-methods {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin: 5px 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #ffeeba;
+}
+
+.footer-payment-methods ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-payment-methods li {
+    padding: 5px 0;
+}
+
+.footer-payment-methods li:last-child {
+    border-bottom: none;
+}

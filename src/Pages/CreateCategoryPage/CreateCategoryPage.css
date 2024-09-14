@@ -1,0 +1,19 @@
+.create-category-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.create-category-page main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.create-category-page .create-category-form {
+    width: 100%;
+    max-width: 800px;
+}

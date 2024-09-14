@@ -1,0 +1,69 @@
+.edit-category-page {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.edit-category-page main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.edit-category-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-category-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.edit-category-form .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-category-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.edit-category-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-category-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-category-form button:hover {
+    background-color: #0056b3;
+}
+
+.edit-category-form .cancel-button {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.edit-category-form .cancel-button:hover {
+    text-decoration: underline;
+}

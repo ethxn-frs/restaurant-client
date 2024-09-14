@@ -1,0 +1,65 @@
+.edit-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-item-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-item-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.edit-item-form input,
+.edit-item-form select,
+.edit-item-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.edit-item-form input:focus,
+.edit-item-form select:focus,
+.edit-item-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.edit-item-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.edit-item-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-item-form button:hover {
+    background-color: #0056b3;
+}
+
+.edit-item-form .cancel-button {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.edit-item-form .cancel-button:hover {
+    color: #0056b3;
+}

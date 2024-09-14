@@ -1,0 +1,19 @@
+.edit-item-page {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.edit-item-page main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.edit-item-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

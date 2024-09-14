@@ -1,0 +1,19 @@
+.create-item-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.create-item-page main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.create-item-page .create-item-form {
+    width: 100%;
+    max-width: 800px;
+}

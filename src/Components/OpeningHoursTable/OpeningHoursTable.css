@@ -1,0 +1,28 @@
+.opening-hours-table-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opening-hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.opening-hours-table th,
+.opening-hours-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.opening-hours-table th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.opening-hours-table th:hover {
+    background-color: #e9ecef;
+}

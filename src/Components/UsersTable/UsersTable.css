@@ -1,0 +1,116 @@
+/* Styles pour le conteneur principal de la table des utilisateurs */
+.users-table-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les actions en haut du tableau (recherche, création, etc.) */
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour le tableau des utilisateurs */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.users-table th,
+.users-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.users-table th {
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+.users-table th:hover {
+    background-color: #e9ecef;
+}
+
+/* Styles pour les boutons d'édition et de suppression */
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Styles pour la pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}

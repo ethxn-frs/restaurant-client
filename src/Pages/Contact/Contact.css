@@ -1,0 +1,32 @@
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-boxes>* {
+    flex: 1;
+    min-width: 280px;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 10px;
+    }
+
+    .contact-boxes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
