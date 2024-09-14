@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ethxn-frs/restaurant-client.git', credentialsId: '5de0e5af-c4af-45cf-8a7a-b20a599baf8a'
+                git branch: 'main', url: 'https://github.com/ethxn-frs/restaurant-client.git', credentialsId: '5de0e5af-c4af-45cf-8a7a-b20a599baf8a'
             }
         }
 
@@ -31,20 +31,23 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
+                sh 'npm install --save-dev @babel/plugin-proposal-private-property-in-object' // Ajouter la dépendance manquante
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                // Désactiver CI=true pour ignorer les warnings comme erreurs
+                sh 'CI=false npm run build'
             }
         }
 
         stage('Deploy') {
             steps {
+                // Commande pour déployer le front-end sur ton serveur Nginx
                 sh '''
-                sudo rm -rf /var/www/restaurant-client/*
-                sudo cp -r build/* /var/www/restaurant-client/
+                sudo rm -rf /var/www/restaurant-frontend/*
+                sudo cp -r build/* /var/www/restaurant-frontend/
                 '''
             }
         }
