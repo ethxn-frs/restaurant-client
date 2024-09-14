@@ -46,13 +46,8 @@ pipeline {
             steps {
                 // Commande pour déployer le front-end sur ton serveur Nginx
                 sh '''
-                echo "Creating destination directory..."
-                sudo mkdir -p /var/www/restaurant-client
-                echo "Cleaning up old files..."
                 sudo rm -rf /var/www/restaurant-client/*
-                echo "Copying new build files..."
                 sudo cp -r build/* /var/www/restaurant-client/
-                echo "Deployment successful."
                 '''
             }
         }
