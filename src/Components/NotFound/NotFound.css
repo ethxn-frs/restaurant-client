@@ -1,0 +1,22 @@
+/* src/Components/NotFound.css */
+.not-found-container {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.not-found-container h1 {
+    font-size: 3rem;
+    color: #ff4c4c;
+}
+
+.not-found-container p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.not-found-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}

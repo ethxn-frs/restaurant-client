@@ -16,6 +16,7 @@ import EditCategoryPage from './Pages/EditCategoryPage/EditCategoryPage';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import EditUserPage from './Pages/EditUserPage/EditUserPage';
 import ManageUsersPage from './Pages/ManageUsersPage/ManageUsersPage';
+import NotFoundPage from './Pages/NotFound/NotFoundPage';
 
 const App: React.FC = () => {
   return (
@@ -79,6 +80,7 @@ const App: React.FC = () => {
           </ProtectedRoute>
         } />
 
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );

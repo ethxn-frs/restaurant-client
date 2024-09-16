@@ -1,3 +1,6 @@
+/* src/Components/Header.css */
+
+/* Styles de base pour le header */
 .header {
     background-color: #ff5733;
     color: white;
@@ -57,4 +60,58 @@
 
 .nav-link:hover {
     color: #ffeeba;
+}
+
+/* Styles pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-subtitle {
+        font-size: 1rem;
+    }
+
+    .header-nav {
+        margin-top: 20px;
+    }
+}
+
+/* Styles pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .header-logo .logo {
+        width: 120px;
+    }
+
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+    .header-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
 }

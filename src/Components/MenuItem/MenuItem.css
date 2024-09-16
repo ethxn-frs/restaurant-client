@@ -1,3 +1,5 @@
+/* src/Components/MenuItem/MenuItem.css */
+
 .menu-item {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -6,13 +8,17 @@
     transition: box-shadow 0.3s;
     width: 230px;
     height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .menu-item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item h4 {
+.menu-item h3 {
     margin: 0 0 10px;
     font-size: 1.5rem;
 }
@@ -20,4 +26,19 @@
 .menu-item p {
     margin: 5px 0;
     color: #555;
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 180px;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 150px;
+    }
 }

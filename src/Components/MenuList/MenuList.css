@@ -1,8 +1,16 @@
+/* src/Components/MenuList/MenuList.css */
+
 .menu-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px 130px;
+    gap: 20px;
+    padding: 20px;
     justify-content: center;
-    align-items: center;
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    .menu-list {
+        padding: 10px;
+    }
 }
