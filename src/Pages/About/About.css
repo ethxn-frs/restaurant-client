@@ -32,3 +32,15 @@
     font-size: 1rem;
     color: #555;
 }
+
+/* Styles pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+
+    .about-content {
+        display: block;
+    }
+
+    .menu-filters {
+        padding: 0;
+    }
+}

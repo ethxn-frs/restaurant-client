@@ -1,10 +1,5 @@
 /* src/Pages/Menu.css */
 
-/* Styles de base pour la page Menu */
-.menu-page {
-    padding: 20px 50px;
-}
-
 .menu-filters {
     display: flex;
     justify-content: space-between;
@@ -47,18 +42,10 @@
         align-items: center;
         padding: 0 20px;
     }
-
-    .menu-page {
-        padding: 20px;
-    }
 }
 
 /* Styles pour les petits écrans (mobiles) */
 @media (max-width: 480px) {
-    .menu-page {
-        padding: 10px;
-    }
-
     .menu-filters {
         padding: 0;
     }
